@@ -1,10 +1,3 @@
-
-def isPrime(num):
-    for i in range(2, int(num/2)):
-        if (num % i == 0):
-            return False
-        return True
-
 def main():
     while True:
         try:
@@ -15,25 +8,21 @@ def main():
         number = value
         ranged = int((number ** (1/2))) + 1
         for i in range(2, ranged):
-            count = 0
-            if (number % i == 0):
-                if (isPrime(i) == False):
-                    continue
-                else:
-                    while(number % i == 0 or number == 0):
-                        count += 1
-                        number = number / i
-            else:
-                continue
+            power = 0
+            while(number % i == 0):
+                power += 1
+                number = number / i
 
-            if (count == 1):
+            if (power == 0):
+                continue
+            if (power == 1):
                 print(i, end='')
             else:
-                print(f"{i}^{count}",end='')
+                print(f"{i}^{power}",end='')
 
             if (number == 1):
                 print()
-                continue
+                break
             else:
                 print(" * ", end='')
         
