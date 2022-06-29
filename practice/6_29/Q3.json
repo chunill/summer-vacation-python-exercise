@@ -34,6 +34,16 @@
             "text" : "增益/減益效果(%)",
             "placeholder" : "增益/減益效果(預設+0%)",
             "hint_text" : "減益效果請加上負號"
+        },
+        "base_critical_damage" : {
+            "text" : "基礎會心傷害",
+            "placeholder" : "基礎會心傷害",
+            "hint_text" : "待定"
+        },
+        "equip_critical_damage" : {
+            "text" : "裝備會心傷害",
+            "placeholder" : "裝備會心傷害",
+            "hint_text" : "待定"
         }
     }
 }
